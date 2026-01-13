@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 	// === API Keys and Configuration ===
-	const ALPHA_VANTAGE_API_KEY = 'AK9PH524P0CB2IHL'; // This key is from user input.
+	const ALPHA_VANTAGE_API_KEY = 'USER_API_KEY'; // This key is from user input.ex) A%K%9%P%%H%52%4P%0CB2IH%L
 
 	// === DOM Element References ===
 	const elements = {
