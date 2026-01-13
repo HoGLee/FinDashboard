@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>간단 금융 정보</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>금융 정보 대시보드</h1>
+
+			<div class="stock-search">
+				<h2>단일 주식 종목 검색 (미국 주식)</h2>
+				<div class="search-input-group">
+					<input type="text" id="stock-ticker-input" placeholder="종목 코드 입력 (예: AAPL, TSLA)" />
+					<button id="search-stock-button">검색</button>
+				</div>
+				<div class="card stock-result-card" id="stock-result-card">
+					<h3 id="stock-name"></h3>
+					<p class="price" id="stock-price"></p>
+					<p class="change" id="stock-change"></p>
+					<p class="error-message" id="stock-error"></p>
+					<div class="chart-container">
+						<canvas id="stock-chart" width="600"></canvas>
+					</div>
+				</div>
+			</div>
+
+			<div class="cards-grid">
+				<div class="card" id="bitcoin-card">
+					<h2>비트코인 (BTC/KRW)</h2>
+					<p class="price" id="bitcoin-price">로딩 중...</p>
+					<p class="change" id="bitcoin-change"></p>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js" defer></script>
+	</body>
+</html>
